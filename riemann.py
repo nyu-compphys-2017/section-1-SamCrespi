@@ -10,8 +10,17 @@ def hello_world(name=''):
     print "hello world!"
     print name
     return
-    
-    
+
 #Implement the Riemann Sum approximation for integrals.
+
+def riemann(a, b, N, fn):
+    width = (b - a)/N
+    x_vals = np.arange(a+width,b+width,width)
+    fn_values = fn(x_vals)
+
+    return
+    
+    
+
 
 #test
